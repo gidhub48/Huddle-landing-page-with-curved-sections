@@ -1,5 +1,6 @@
 {
   "name": "huddle-landing-page-with-curved-react",
+  "homepage": "https://gidhub48.github.io/Huddle-landing-page-with-curved-sections/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -35,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
