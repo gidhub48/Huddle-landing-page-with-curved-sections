@@ -1,0 +1,17 @@
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+.logo{
+    user-select: none;
+}
+
+@media (max-width:600px) {
+    .logo{
+        width: 170px;
+    }
+}

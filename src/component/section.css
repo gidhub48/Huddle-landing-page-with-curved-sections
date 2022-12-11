@@ -1,0 +1,86 @@
+:root {
+    /* Primary */
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+    /* Neutral */
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+}
+picture>img {
+    display: block;
+    width: 100%;
+}
+
+:where(section.right-img, section.left-img) * {
+    box-sizing: border-box;
+}
+
+section>.content-bg {
+    background-color: var(--Very-Pale-Blue);
+}
+picture.no ~ .content-bg{
+    background-color: transparent;
+}
+section.right-img .text-content {
+    padding: clamp(3rem, 1vw, 2rem) clamp(10%, 10vw, 2rem) 2rem 2rem;
+}
+
+section.left-img .text-content {
+    padding: clamp(3rem, 1vw, 2rem) 2rem 2rem clamp(7%, 10vw, 2rem);
+}
+
+section.right-img .content {
+    flex-wrap: wrap-reverse;
+}
+
+section.left-img .content {
+    flex-wrap: wrap-reverse;
+}
+.content {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3.5rem;
+}
+section.left-img .content{
+    flex-direction: row-reverse;
+}
+.content> :where(.text-content, .img-content) {
+    flex: 1 1 50%;
+}
+
+.img-content>img {
+    width: 100%;
+    min-width: 320px;
+    display: block;
+    user-select: none;
+}
+
+.content .img-content {
+    width: 325px;
+    user-select: none;
+}
+
+.startCommunity{
+    text-align: center;
+    margin:5rem auto 10rem;
+}
+.startCommunity > h1{
+    color: var(--Very-Dark-Cyan);
+    padding: 0 2rem;
+}
+.startCommunity > a{
+    margin:3rem auto;
+}
+picture{
+    user-select: none;
+}
+@media (max-width: 700px) {
+    section .text-content {
+        text-align: center;
+    }
+}
+

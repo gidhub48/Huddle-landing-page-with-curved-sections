@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+:root {
+    /* Primary */
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+    /* Neutral */
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;color: black;
+}
+picture{
+    display: block;
+    margin-bottom: -2px;
+}
+
+h1{
+    font-size: clamp(1.6rem,5vw,2.4rem);
+    margin: 0;
+}
+h1.header{
+    font-size: clamp(2rem,5.2vw,2.8rem);
+}
+h1.gigantic{
+    font-size: 5.5rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.btn-deco1{
+    display: block;
+    width: fit-content;
+    padding: 1rem 5rem;
+    border-radius: 2.5rem;
+    transition: all 0.2s;
+
+    color: #fff;
+    background-color: var(--Pink);
+    box-shadow: 0 0 10px rgb(216, 216, 216);
+}
+.btn-deco1:hover{
+    background-color: var(--Light-Pink);
+}
+.btn-deco2{
+    display: block;
+    width: fit-content;
+    padding: 0.5rem 1.6rem;
+    border-radius: 2.5rem;
+    transition: all 0.2s;
+
+    color: var(--Pink);
+    border: 1px solid var(--Pink);
+    box-shadow: 0 2px 10px rgb(216, 216, 216);
+}
+.btn-deco2:hover{
+    border-color: var(--Light-Pink);
+    color: var(--Light-Pink);
+}
+.btn-deco3{
+    width: fit-content;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: 0;
+    transition: all 0.2s;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: var(--Pink);
+    font-size: 1rem;
+}
+.btn-deco3:hover{
+    background-color: var(--Light-Pink);
+}
+
+input{
+    padding: .5rem;
+    border-radius: .5rem;
+    outline: none;
+    border: 0;
+}
+.no{
+    display: none;
+}
